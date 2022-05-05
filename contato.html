@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu primeiro site</title>
+</head>
+
+<body>
+    <center>
+        <img src="img/logoimg.png" alt="logo entra21" width="150px">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="empresa.html">Empresa</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="contato.html">contato</a>
+            <a href="cadastro.html">cadastro</a>
+        </nav> <br>
+    </center>
+
+  <center>
+    <form action="enviaremail.cs" method="get">
+
+        <label for="">Nome:</label>
+        <input type="text" name="nome" value="lucas" readonly placeholder="Digitar"> <br>
+
+        <label for="">Email:</label>
+        <input type="email" name="email" placeholder="Digitar" required ><br>
+       
+        <label for="">Senha</label>
+        <input type="password" name="senha" placeholder="Digitar"><br>
+
+        <label>Estados:</label>
+        <select name="estado">
+            <option value="">selecionar estado</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="PR">Parana</option>
+            <option value="RS">Rio Grande do Suk</option>
+        </select><br>
+         
+        <label>Sexo:</label>
+        Masculino<input type="radio" name="Sexo" value="M"> 
+        Feminino <input type="radio" name="Sexo" value="F"><br>
+
+        <label>Comidas:</label>
+        <input type="checkbox" name="comida" value="lasanha">Lasanha
+        <input type="checkbox" name="comida" value="pizza">Pizza
+        <input type="checkbox" name="comida" value="arros">Arroz
+        <input type="checkbox" name="comida" value="feijao">Feijão <br>
+
+        <button tayper="submit">Enviar</button>
+        <input type="reset" name="enviar" value="Cancelar">
+
+        
+
+        
+    </center>
+
+
+
+    </form>
+</body>
+
+</html>
+
+
+<!--Atributos 
+
+disebles
+readonly
+required
+-->

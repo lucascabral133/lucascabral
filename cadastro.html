@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu primeiro site</title>
+</head>
+
+<body>
+    <center>
+        <img src="img/logoimg.png" alt="logo entra21" width="150px">
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="empresa.html">Empresa</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="contato.html">contato</a>
+            <a href="cadastro.html">cadastro</a>
+        </nav>
+    </center>
+
+    <center>
+        <form action="enviar-cadrastro" method="post" >
+
+        <label>Nome:</label>
+        <input type="text" name="nome" placeholder="Digitar"><br>
+
+        <label>CPF:</label>
+        <input type="text" name="nome" placeholder="Digitar"><br>
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Digitar"><br>
+
+        <label>Endereço</label>
+        <input type="text" name="endereco" placeholder=""><br>
+
+        <label>N°</label>
+        <input type="number" name="numero-casa" placeholder=""><br>
+
+        <label>Bairro</label>
+        <input type="text" name="bairro" placeholder=""><br>
+
+        <label>Sexo</label>
+        Masculino: <input type="radio" name="sexo" value="M">
+        Feminino: <input type="radio" name="sexo" value="F">
+        <br>
+
+        <select name="estado">
+            <option value="">Selecione estado</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SP">São Paulo</option>
+        </select><br>
+
+
+
+        <select name="nacionalidade">
+            <option value="">Selecione estado</option>
+            <option value="BR">Brasil</option>
+            <option value="ES">Estados Unidos</option>
+            <option value="CD">Canada</option>
+        </select><br>
+
+        <button tayper="submit">Enviar</button>
+        <input type="reset" name="enviar" value="Cancelar">
+    </form>
+    </center>
+
+
+    </div>
+
+</body>
+
+</html>
