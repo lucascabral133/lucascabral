@@ -18,55 +18,68 @@
             <a href="servicos.html">Serviços</a>
             <a href="contato.html">contato</a>
             <a href="cadastro.html">cadastro</a>
-        </nav>
+        </nav><br>
     </center>
 
     <center>
-        <form action="enviar-cadrastro" method="post" >
 
-        <label>Nome:</label>
-        <input type="text" name="nome" placeholder="Digitar"><br>
+        <fieldset>
+            <form action="enviar-cadrastro.cs" method="get" autocomplete="on" enctype="multipart/form-data">
 
-        <label>CPF:</label>
-        <input type="text" name="nome" placeholder="Digitar"><br>
+                <label>Nome:</label>
+                <input type="text" name="nome" placeholder="Digitar" value="Lucas"><br>
 
-        <label>Email</label>
-        <input type="email" name="email" placeholder="Digitar"><br>
+                <label>CPF:</label>
+                <input type="text" name="nome" placeholder="Digitar" autocomplete="off"><br>
 
-        <label>Endereço</label>
-        <input type="text" name="endereco" placeholder=""><br>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Digitar"><br>
 
-        <label>N°</label>
-        <input type="number" name="numero-casa" placeholder=""><br>
+                <label>Endereço</label>
+                <input type="text" name="endereco" placeholder="Digitar"><br>
 
-        <label>Bairro</label>
-        <input type="text" name="bairro" placeholder=""><br>
+                <label>N°</label>
+                <input type="number" name="numero-casa" placeholder="Digitar"><br>
 
-        <label>Sexo</label>
-        Masculino: <input type="radio" name="sexo" value="M">
-        Feminino: <input type="radio" name="sexo" value="F">
-        <br>
+                <label>Bairro</label>
+                <input type="text" name="bairro" placeholder="Digitar"><br>
 
-        <select name="estado">
-            <option value="">Selecione estado</option>
-            <option value="SC">Santa Catarina</option>
-            <option value="RS">Rio Grande do Sul</option>
-            <option value="RJ">Rio de Janeiro</option>
-            <option value="SP">São Paulo</option>
-        </select><br>
+                <label>Sexo</label>
+                Masculino: <input type="radio" name="sexo" checked value="M">
+                Feminino: <input type="radio" name="sexo" value="F">
+                <br>
+
+                <select name="estado">
+                    <option value="">Selecione estado</option>
+                    <option value="SC" selected>Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </select><br>
 
 
 
-        <select name="nacionalidade">
-            <option value="">Selecione estado</option>
-            <option value="BR">Brasil</option>
-            <option value="ES">Estados Unidos</option>
-            <option value="CD">Canada</option>
-        </select><br>
+                <select name="nacionalidade">
+                    <option value="">Selecione estado</option>
+                    <option value="BR">Brasil</option>
+                    <option value="ES">Estados Unidos</option>
+                    <option value="CD">Canada</option>
+                </select><br>
 
-        <button tayper="submit">Enviar</button>
-        <input type="reset" name="enviar" value="Cancelar">
-    </form>
+                <label> foto</label>
+                <input type="file" name="foto" placeholder="Digitar" multiple><br>
+
+                <label for="">Senha:</label>
+                <input type="password" name="Senha" placeholder="Digitar" minlength="8" maxlength="12"><br>
+
+                <input type="hidden" name="codigogoibge" value="1034243">
+
+                <textarea name="mensagem" id="" cols="20" rows="5" required></textarea><br>
+
+                <button tayper="submit">Enviar</button>
+                <input type="reset" name="enviar" value="Cancelar">
+            </form>
+        </fieldset>
     </center>
 
 
@@ -75,3 +88,13 @@
 </body>
 
 </html>
+
+
+<!-- multipart/form-data sempre quando se quer fazer um oploud de algum arvivos no formulario é obrigatorio
+
+     OS VALUES são normalmente usados em formularios que vao editar
+
+     checked para deixar ja marcado usado em radio e checkbox
+
+     required é para pessoas ser obrigada preencher o campo
+     -->
