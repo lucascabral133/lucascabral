@@ -5,8 +5,7 @@
 }
 
 
-html,
-body {
+html,body {
     margin: 0;
     padding: 0;
 
@@ -19,11 +18,11 @@ nav {
     top: 0;
     width: 100%;
     height: 64px;
-    background: #2F2F23;
-
+    background: #2E3532;
+    float: right;
 }
 
-nav .logo-site {
+ .logo-site {
     float: left;
     width: 194px;
     margin: 0 40px;
@@ -62,6 +61,7 @@ main {
     width: 43%;
     display: inline-block;
     border-radius: 30px;
+    min-height: 273px;
 
 }
 
@@ -86,24 +86,98 @@ main {
 
 .homearticle p {
     font-style: italic;
+    
+    
 }
 
 
 .butao-1 {
     display: inline-block;
     width: auto;
-    padding: 4px;
+    float: right;
+    padding: 10px;
     background: #2F2F23;
     text-decoration: none;
-    border-radius: 7px;
-    float: right;
+    border-radius: 7px;   
     cursor: pointer;
     color: white;
+    text-align: center;
+   
 }
 
 .butao-1:hover {
     background: #5E5E45;
-    padding: 6px;
+    padding: 14px;
     transition: all 0.3s ease-in-out;
+    
 
 }
+
+
+
+.texto2{
+    font-size: 15px;
+    
+}
+
+.carosul {
+    width: 100%;
+    background: #2E3532;
+    overflow: hidden;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.carosul li {
+    width: 23%; 
+    margin: 2% 1%;
+    list-style: none;
+    float: left;
+    display: inline-block;  
+   
+}
+
+.carosul li img {
+    width: 100%;
+}
+
+
+
+footer {
+    background:#2E3532 ;
+    width: 100%;
+    position: absolute;
+    
+    color: white;
+   
+}
+
+footer span {
+   display: inline-block;
+   width: 48%;
+   margin: 20px 5px;
+
+}
+
+footer .assinatura{
+    text-align: right;
+    
+
+}
+
+footer .assinatura a {
+    text-decoration: none;
+    color: #C7CEDB;
+    cursor: pointer;
+    
+}
+
+
+.direitos {
+    margin-left: 17px;
+}
+
+
+
+
+
