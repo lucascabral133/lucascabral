@@ -2,106 +2,157 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu primeiro site</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=in, initial-scale=1.0">
+  <link rel="stylesheet" href="cadastro.css">
+  <title>cadastro</title>
 </head>
 
 <body>
-    <center>
-        <img src="img/logoimg.png" alt="logo entra21" width="150px">
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="empresa.html">Empresa</a>
-            <a href="servicos.html">Serviços</a>
-            <a href="contato.html">contato</a>
-            <a href="cadastro.html">cadastro</a>
-        </nav><br>
-    </center>
-
-    <center>
-
-        <fieldset>
-            <form action="enviar-cadrastro.cs" method="get" autocomplete="on" enctype="multipart/form-data">
-
-                <label>Nome:</label>
-                <input type="text" name="nome" placeholder="Digitar" value="Lucas"><br>
-
-                <label>CPF:</label>
-                <input type="text" name="nome" placeholder="Digitar" autocomplete="off"><br>
-
-                <label>Email</label>
-                <input type="email" name="email" placeholder="Digitar"><br>
-
-                <label>Endereço</label>
-                <input type="text" name="endereco" placeholder="Digitar"><br>
-
-                <label>N°</label>
-                <input type="number" name="numero-casa" placeholder="Digitar"><br>
-
-                <label>Bairro</label>
-                <input type="text" name="bairro" placeholder="Digitar"><br>
-
-                <label>Sexo</label>
-                Masculino: <input type="radio" name="sexo" checked value="M">
-                Feminino: <input type="radio" name="sexo" value="F">
-                <br>
-
-                <select name="estado">
-                    <option value="">Selecione estado</option>
-                    <option value="SC" selected>Santa Catarina</option>
-                    <option value="RS">Rio Grande do Sul</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="SP">São Paulo</option>
-                </select><br>
+  <header>
+    <nav>
+      <img src="./img/logoentrsa21.png" alt="logo entra21" class="logo-site">
+      <a href="index.html">Home</a>
+      <a href="empresa.html">Empresa</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="contato.html">contato</a>
+      <a href="cadastro.html">cadastro</a>
+    </nav><br>
+  </header>
 
 
 
-                <select name="nacionalidade">
-                    <option value="">Selecione estado</option>
-                    <option value="BR">Brasil</option>
-                    <option value="ES">Estados Unidos</option>
-                    <option value="CD">Canada</option>
-                </select><br>
+  <main>
+    <div class="container">
 
-                <label> foto</label>
-                <input type="file" name="foto" placeholder="Digitar" multiple><br>
+      <h1>Cadastre-se</h1>
+      <div class="divisao"></div>
+      <form action="">
 
-                <label for="">Senha:</label>
-                <input type="password" name="Senha" placeholder="Digitar" minlength="8" maxlength="12"><br>
+        <input type="text" name="nome" placeholder="Nome" class="nome">
 
-                <input type="hidden" name="codigogoibge" value="1034243">
+        <input type="text" name="sobrenome" placeholder="Sobrenome" class="">
 
-                <textarea name="mensagem" id="" cols="20" rows="5" required></textarea><br>
+        <input type="email" name="email" placeholder="Email" required>
 
-                <button tayper="submit">Enviar</button>
-                <input type="reset" name="enviar" value="Cancelar">
-            </form>
-        </fieldset>
-    </center>
-    <footer>
-
-        <span class="direitos">2022 &copy; todos os direitos reservados </span><br>
-        <span class="assinatura">Feito pela <a href="https://externo.proway.com.br/" target="_blank"> Lucas</a></span>
-    
-      </footer>
-    
+        <input type="password" name="senha" placeholder="Senha">
 
 
-    </div>
 
+        <div class="data-nascimento">
+          <h5>Data de nascimento</h5>
+          <select name="data" id="">
+
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+            <option value="">10</option>
+            <option value="">11</option>
+            <option value="">12</option>
+            <option value="">13</option>
+            <option value="">14</option>
+            <option value="">15</option>
+            <option value="">16</option>
+            <option value="">17</option>
+            <option value="">18</option>
+            <option value="">19</option>
+            <option value="">20</option>
+            <option value="">21</option>
+            <option value="">22</option>
+            <option value="">23</option>
+            <option value="">24</option>
+            <option value="">25</option>
+            <option value="">26</option>
+            <option value="">27</option>
+            <option value="">28</option>
+            <option value="">29</option>
+            <option value="">30</option>
+            <option value="">31</option>
+          </select>
+
+
+          <select name="mes" id="">
+
+            <option value="">Jan</option>
+            <option value="">Fev</option>
+            <option value="">Mar</option>
+            <option value="">Abr</option>
+            <option value="">Mai</option>
+            <option value="">Jun</option>
+            <option value="">Jul</option>
+            <option value="">Ago</option>
+            <option value="">Set</option>
+            <option value="">Out</option>
+            <option value="">Nov</option>
+            <option value="">Dez</option>
+          </select>
+
+          <select name="ano" id="">
+
+            <option value="">2022</option>
+            <option value="">2021</option>
+            <option value="">2020</option>
+            <option value="">2019</option>
+            <option value="">2018</option>
+            <option value="">2017</option>
+            <option value="">2016</option>
+            <option value="">2015</option>
+            <option value="">2014</option>
+            <option value="">2013</option>
+            <option value="">2012</option>
+            <option value="">2011</option>
+            <option value="">2010</option>
+            <option value="">2009</option>
+            <option value="">2008</option>
+            <option value="">2007</option>
+            <option value="">2006</option>
+            <option value="">2005</option>
+            <option value="">2004</option>
+            <option value="">2003</option>
+            <option value="">2002</option>
+            <option value="">2001</option>
+            <option value="">2000</option>
+          </select>
+
+
+
+
+          <div class="texto-sexo">
+            <h5>Sexo:</h5>
+          </div>
+
+          <div>
+            <label for="">Masculino</label>
+            <input type="radio" name="sexo" value="M" class="massi">
+          </div>
+
+          <div>
+            <label for="">Feminino</label>
+            <input type="radio" name="sexo" value="F">
+          </div>
+
+          <div>
+            <label for="">Outros</label>
+            <input type="radio" name="sexo" value="O">
+          </div>
+
+
+
+
+
+
+
+      </form>
+  </main>
+  </div>
 </body>
 
 </html>
-
-
-<!-- multipart/form-data sempre quando se quer fazer um oploud de algum arvivos no formulario é obrigatorio
-
-     OS VALUES são normalmente usados em formularios que vao editar
-
-     checked para deixar ja marcado usado em radio e checkbox
-
-     required é para pessoas ser obrigada preencher o campo
-     -->
